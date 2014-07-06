@@ -5,22 +5,159 @@
   <title>Ember Starter Kit</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 </head>
 <body>
 
   <script type="text/x-handlebars">
-    <h1>Hello, World</h1>
-    {{outlet}}
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container-fluid">  
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Stuck in the Closet</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="col-sm-3">
+      <ul class='nav nav-pills nav-stacked'>
+        <li class='active'><a href="#">Top <span class="badge">14</span></a></li>
+        <li><a href="#">Bottom</a></li>
+        <li><a href="#">Jacket</a></li>
+        <li><a href="#">Underwear</a></li>
+      </ul>
+    </section>
+    <section class="col-sm-9">
+        <h2>Summary</h2>
+        <div class='row'>  
+          <div class='col-md-8'>
+            <div class='btn-group'>
+              <button type='button' class='btn btn-info'>1 mo</button>
+              <button type='button' class='btn btn-info'>3 mos</button>
+              <button type='button' class='btn btn-info'>6 mos</button>
+              <button type='button' class='btn btn-info'>1 yr</button>
+              <button type='button' class='btn btn-info'>2 yrs</button>
+            </div>
+            <img style='height:300px;width:100%;margin:15px 0 0' alt='someChart'>
+          </div>
+          <div class='col-md-4'>
+            <dl class='dl-horizontal'>
+              <dt>Average price</dt>
+              <dd>$27.50</dd>
+              <dt>Most Expensive Item</dt>
+              <dd>$55.00</dd>
+              <dt>Least Expensive Item</dt>
+              <dd>$5.00</dd>
+              <dt>Most popular brand</dt>
+              <dd>JCrew</dd>
+            </dl>
+          </div>
+        </div>
+
+      <hr>
+
+      <div class='col-md-4'>
+        <img style='width:100%;padding-bottom:100%;background:#ebebeb'>
+        <div >
+          <h3>Product</h3>
+          <small>Added 3 months ago</small>
+          <dl>
+            <dt>Brand</dt>
+            <dd>JCrew</dd>
+            <dt>Price</dt>
+            <dd>$20</dd>
+            <dt>Purchased</dt>
+            <dd>7/4/14</dd>
+          </dl>
+        </div>
+      </div>
+      <div class='col-md-4'>
+        <img style='width:100%;padding-bottom:100%;background:#ebebeb'>
+        <div >
+          <h3>Product</h3>
+          <small>Added 3 months ago</small>
+          <dl>
+            <dt>Brand</dt>
+            <dd>JCrew</dd>
+            <dt>Price</dt>
+            <dd>$20</dd>
+            <dt>Purchased</dt>
+            <dd>7/4/14</dd>
+          </dl>
+        </div>
+      </div>
+      <div class='col-md-4'>
+        <img style='width:100%;padding-bottom:100%;background:#ebebeb'>
+        <div >
+          <h3>Product</h3>
+          <small>Added 3 months ago</small>
+          <dl>
+            <dt>Brand</dt>
+            <dd>JCrew</dd>
+            <dt>Price</dt>
+            <dd>$20</dd>
+            <dt>Purchased</dt>
+            <dd>7/4/14</dd>
+          </dl>
+        </div>
+      </div>
+      <div class='col-md-4'>
+        <img style='width:100%;padding-bottom:100%;background:#ebebeb'>
+        <div >
+          <h3>Product</h3>
+          <small>Added 3 months ago</small>
+          <dl>
+            <dt>Brand</dt>
+            <dd>JCrew</dd>
+            <dt>Price</dt>
+            <dd>$20</dd>
+            <dt>Purchased</dt>
+            <dd>7/4/14</dd>
+          </dl>
+        </div>
+      </div>
+      <div class='col-md-4'>
+        <img style='width:100%;padding-bottom:100%;background:#ebebeb'>
+        <div >
+          <h3>Product</h3>
+          <small>Added 3 months ago</small>
+          <dl>
+            <dt>Brand</dt>
+            <dd>JCrew</dd>
+            <dt>Price</dt>
+            <dd>$20</dd>
+            <dt>Purchased</dt>
+            <dd>7/4/14</dd>
+          </dl>
+        </div>
+      </div>
+      <div class='col-md-4'>
+        <img style='width:100%;padding-bottom:100%;background:#ebebeb'>
+        <div >
+          <h3>Product</h3>
+          <small>Added 3 months ago</small>
+          <dl>
+            <dt>Brand</dt>
+            <dd>JCrew</dd>
+            <dt>Price</dt>
+            <dd>$20</dd>
+            <dt>Purchased</dt>
+            <dd>7/4/14</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
   </script>
 
-  <script type="text/x-handlebars" data-template-name="app">
-    <h2>Main Template Loaded</h2>
-
-
-    <ul>
-    {{#each}}
-      <li>{{title}}</li>
-    {{/each}}
+  <script type='text/x-handlebars' data-template-name='products/index'>
+    <ul class='nav nav-pills nav-stacked'>
+      <li>Top</li>
+      <li>Bottom</li>
+      <li>Jacket</li>
+      <li>Underwear</li>
     </ul>
   </script>
 
@@ -30,7 +167,5 @@
   <script src="js/libs/ember-data.js"></script>
   <script src="js/libs/localstorage_adapter.js"></script>
   <script src="js/app.js"></script>
-  <script src="js/router.js"></script>
-  <script src="js/models/item.js"></script>
 </body>
 </html>
